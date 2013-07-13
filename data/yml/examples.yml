@@ -1,0 +1,190 @@
+---
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Rotchild blvd.
+    Music: Loud
+    Price: Expensive
+    Occupied: Highly
+    Size: Large
+- decision: Yes
+  attributes:
+    Favorite Beer: No
+    VIP: Yes
+    Location: Tel-Aviv seaport
+    Music: Loud
+    Price: Expensive
+    Occupied: Highly
+    Size: Large
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: No
+    Location: Tel-Aviv seaport
+    Music: Quiet
+    Price: Normal
+    Occupied: Yes
+    Size: Large
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: King George St.
+    Music: Quiet
+    Price: Expensive
+    Occupied: Yes
+    Size: Medium
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: Yes
+    Location: King George St.
+    Music: Quiet
+    Price: Expensive
+    Occupied: Yes
+    Size: Large
+- decision: Yes
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Hayarkon St.
+    Music: Quiet
+    Price: Normal
+    Occupied: Yes
+    Size: Small
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Hayarkon St.
+    Music: Quiet
+    Price: Normal
+    Occupied: No
+    Size: Large
+- decision: Yes
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Florentin
+    Music: Loud
+    Price: Cheap
+    Occupied: Yes
+    Size: Small
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: Yes
+    Location: Tel-Aviv seaport
+    Music: Loud
+    Price: Expensive
+    Occupied: Highly
+    Size: Medium
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Tel-Aviv seaport
+    Music: Quiet
+    Price: Cheap
+    Occupied: No
+    Size: Medium
+- decision: No
+  attributes:
+    Favorite Beer: Yes
+    VIP: No
+    Location: Rotchild blvd.
+    Music: Loud
+    Price: Cheap
+    Occupied: Yes
+    Size: Large
+- decision: No
+  attributes:
+    Favorite Beer: Yes
+    VIP: Yes
+    Location: Rotchild blvd.
+    Music: Quiet
+    Price: Cheap
+    Occupied: No
+    Size: Large
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: No
+    Location: Florentin
+    Music: Quiet
+    Price: Expensive
+    Occupied: Yes
+    Size: Medium
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: Yes
+    Location: Florentin
+    Music: Loud
+    Price: Normal
+    Occupied: Highly
+    Size: Medium
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: No
+    Location: Hayarkon St.
+    Music: Loud
+    Price: Normal
+    Occupied: Yes
+    Size: Large
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: King George St.
+    Music: Quiet
+    Price: Normal
+    Occupied: Highly
+    Size: Small
+- decision: Yes
+  attributes:
+    Favorite Beer: Yes
+    VIP: No
+    Location: Tel-Aviv seaport
+    Music: Loud
+    Price: Cheap
+    Occupied: Highly
+    Size: Large
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Tel-Aviv seaport
+    Music: Quiet
+    Price: Normal
+    Occupied: No
+    Size: Small
+- decision: No
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Florentin
+    Music: Loud
+    Price: Expensive
+    Occupied: No
+    Size: Medium
+- decision: Yes
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Rotchild blvd.
+    Music: Quiet
+    Price: Normal
+    Occupied: Yes
+    Size: Medium
+- decision: Yes
+  attributes:
+    Favorite Beer: No
+    VIP: No
+    Location: Tel-Aviv seaport
+    Music: Quiet
+    Price: Normal
+    Occupied: No
+    Size: Medium

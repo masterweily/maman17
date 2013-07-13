@@ -1,0 +1,23 @@
+Enjoy	Favorite Beer	VIP	Location	Music	Price	Occupied	Size
+No	No	No	Rotchild blvd.	Loud	Expensive	Highly	Large
+Yes	No	Yes	 Tel-Aviv seaport	Loud	Expensive	Highly	Large
+Yes	Yes	No	 Tel-Aviv seaport	Quiet	Normal	Yes	Large
+No	No	No	King George St.	Quiet	Expensive	Yes	Medium
+Yes	Yes	Yes	King George St.	Quiet	Expensive	Yes	Large
+Yes	No	No	Hayarkon St.	Quiet	Normal	Yes	Small
+No	No	No	Hayarkon St.	Quiet	Normal	No	Large
+Yes	 No	No 	Florentin	Loud	Cheap	Yes	Small
+Yes	Yes	Yes	 Tel-Aviv seaport	 Loud	 Expensive	 Highly	 Medium
+No	No	No	 Tel-Aviv seaport	Quiet	Cheap	No	Medium
+No	Yes	No	Rotchild blvd.	 Loud	Cheap	Yes	Large
+No	Yes	Yes	Rotchild blvd.	Quiet	Cheap	No	Large
+Yes	Yes	No	Florentin	Quiet	Expensive	Yes	Medium
+Yes	Yes	Yes	Florentin	Loud	Normal	Highly	Medium
+Yes	Yes	No	Hayarkon St.	Loud	Normal	Yes	Large
+ No	 No	No 	King George St.	Quiet	Normal	Highly	Small
+Yes	Yes	No	 Tel-Aviv seaport	 Loud	Cheap	Highly	Large
+No	No	No	 Tel-Aviv seaport	Quiet	Normal	No	Small
+No	No 	No 	Florentin	 Loud	Expensive	No	 Medium
+Yes	No	No	Rotchild blvd.	Quiet	Normal	Yes	Medium
+Yes	No	No	 Tel-Aviv seaport	Quiet	Normal	No	Medium
+
