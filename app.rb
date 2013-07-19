@@ -7,7 +7,7 @@ module App
 
   autoload :Data
 
-  Data.examples.map(&:attributes)
+  examples = Data.examples
 
 end
 

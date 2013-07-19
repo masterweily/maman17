@@ -1,3 +1,9 @@
+#
+# gererator script
+#
+# generate data yml file from raw data txt file
+#
+#
 require './text_parser'
 require 'yaml'
 module Generators

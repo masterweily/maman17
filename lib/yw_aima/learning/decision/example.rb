@@ -10,4 +10,5 @@ class YW_AIMA::Learning::Decision::Example
 
   attr_reader :attributes,:decision
 
+
 end

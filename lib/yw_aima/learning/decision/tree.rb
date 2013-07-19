@@ -1,30 +1,21 @@
 class YW_AIMA::Learning::Decision::Tree
 
-  def initialize(arg)
-    if arg.is_a? Hash
-      @leafs = arg
-    else
-      @decision = arg
-    end
+  def initialize(value)
+    @value = value
+    @branches = {}
   end
 
-  def decision(attributes)
-    if leaf?
-      @decision
-    else
-      evaluate_decision(attributes)
-    end
+  def decision(example)
+    leaf? ? @value : @branches[example.attributes[@value]].decision(example)
   end
   alias_method :classify, :decision
 
+  def add_branch(label,subtree)
+    @branches[label] = subtree
+  end
+
   def leaf?
-    !@decision.nil?
+    @branches.empty?
   end
-
-  private
-  def evaluate_decision(attributes)
-    # TODO
-  end
-
 
 end
