@@ -6,7 +6,7 @@ module YW_AIMA
     module Decision
 
       describe Learner do
-        let(:examples) { App::Data.examples }
+        let(:examples) { App::Data.test_examples }
 
         context 'tree_learn' do
 
@@ -29,27 +29,31 @@ module YW_AIMA
           let(:attributes) { Learner.extract_attributes examples }
 
           it 'will find values for attributes' do
-            Learner.values_for('Music',examples).same_values?(%w(Loud Quiet)).should be_true
-            Learner.values_for('VIP',examples).same_values?([true,false]).should be_true
+            Learner.values_for('Outlook',examples).same_values?(%w(Sunny Overcast Rain)).should be_true
           end
 
           it 'will extract attributes from example' do
-            attributes.same_values?(["Favorite Beer", "VIP", "Location", "Music", "Price", "Occupied", "Size"]).should be_true
+            attributes.same_values?(%w(Outlook Temperature Humidity Wind)).should be_true
           end
 
           it 'will find plurality value' do
-            Learner.plurality_value(examples).should be true
-            Learner.plurality_value(examples.take(1)).should be false
+            Learner.plurality_value(examples).should == 'Yes'
+            Learner.plurality_value(examples.take(1)).should == 'No'
           end
 
           it 'will tie break randomly in plurality value' do
-
-            (1..100).map{ Learner.plurality_value(examples.take(2)) }.uniq.size.should be 2
-
+            (1..100).map{ Learner.plurality_value(examples.take(4)) }.uniq.size.should be 2
           end
 
-          it 'will calculate importance' do
+          it 'will calculate gain' do
+            Learner.gain('Wind',examples).should be_within(0.001).of(0.048)
+          end
 
+          it 'will calculate probabilities' do
+            Learner.probability('Yes',examples).should ==  9.0 / 14
+          end
+          it 'will calculate entropy' do
+            Learner.entropy(examples).should be_within(0.001).of(0.94)
           end
 
           it 'will choose the most important attribute' do

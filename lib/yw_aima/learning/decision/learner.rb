@@ -23,14 +23,41 @@ module YW_AIMA::Learning::Decision
 
 
 
+
     private
+
+    def self.gain attribute,examples
+      entropy(examples) - values_for(attribute,examples).map { |value| reduced_entropy(attribute,value,examples) }.inject(:+)
+    end
+
+    def self.reduced_entropy attribute,value,examaples
+      selected = examaples.select{|example| example.attributes[attribute] == value }
+      selected.size.to_f / examaples.size * entropy(selected)
+    end
+
+    def self.entropy examples
+      decisions(examples).map{
+          |decision| probability(decision,examples)
+      }.map {
+          |p| - p * Math.log2(p)
+      }.inject(&:+)
+    end
+
+    def self.probability(decision, examples)
+      examples.select{|example| example.decision == decision}.size.to_f / examples.size
+    end
+
     def self.values_for(attribute, examples)
       examples.map{ |e| e.attributes[attribute] }.uniq
     end
 
 
     def self.same_class(examples)
-      examples.uniq(&:decision).length == 1
+      decisions(examples).size == 1
+    end
+
+    def self.decisions(examples)
+      examples.map(&:decision).uniq
     end
 
     def self.choose_attribute(attributes, examples)
@@ -38,8 +65,8 @@ module YW_AIMA::Learning::Decision
     end
 
     def self.importance(attribute, examples)
-      # todo
-      attribute.to_s.length
+      #attribute.to_s.length
+      gain(attribute,examples)
     end
 
 

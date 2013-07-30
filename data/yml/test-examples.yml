@@ -1,0 +1,85 @@
+---
+- decision: 'No'
+  attributes:
+    Outlook: Sunny
+    Temperature: Hot
+    Humidity: High
+    Wind: Weak
+- decision: 'No'
+  attributes:
+    Outlook: Sunny
+    Temperature: Hot
+    Humidity: High
+    Wind: Strong
+- decision: 'Yes'
+  attributes:
+    Outlook: Overcast
+    Temperature: Hot
+    Humidity: High
+    Wind: Weak
+- decision: 'Yes'
+  attributes:
+    Outlook: Rain
+    Temperature: Mild
+    Humidity: High
+    Wind: Weak
+- decision: 'Yes'
+  attributes:
+    Outlook: Rain
+    Temperature: Cool
+    Humidity: Normal
+    Wind: Weak
+- decision: 'No'
+  attributes:
+    Outlook: Rain
+    Temperature: Cool
+    Humidity: Normal
+    Wind: Strong
+- decision: 'Yes'
+  attributes:
+    Outlook: Overcast
+    Temperature: Cool
+    Humidity: Normal
+    Wind: Strong
+- decision: 'No'
+  attributes:
+    Outlook: Sunny
+    Temperature: Mild
+    Humidity: High
+    Wind: Weak
+- decision: 'Yes'
+  attributes:
+    Outlook: Sunny
+    Temperature: Cool
+    Humidity: Normal
+    Wind: Weak
+- decision: 'Yes'
+  attributes:
+    Outlook: Rain
+    Temperature: Mild
+    Humidity: Normal
+    Wind: Weak
+- decision: 'Yes'
+  attributes:
+    Outlook: Sunny
+    Temperature: Mild
+    Humidity: Normal
+    Wind: Strong
+- decision: 'Yes'
+  attributes:
+    Outlook: Overcast
+    Temperature: Mild
+    Humidity: High
+    Wind: Strong
+- decision: 'Yes'
+  attributes:
+    Outlook: Overcast
+    Temperature: Hot
+    Humidity: Normal
+    Wind: Weak
+- decision: 'No'
+  attributes:
+    Outlook: Rain
+    Temperature: Mild
+    Humidity: High
+    Wind: Strong

@@ -9,13 +9,16 @@ module App
   autoload :Data
   Learner = YW_AIMA::Learning::Decision::Learner
 
-  examples = Data.examples
-  tree = Learner.tree_learn(examples)
+  def self.run
+    examples = Data.examples
+    tree = Learner.tree_learn(examples)
 
-  ap tree.to_hash
-  puts tree.to_hash.to_yaml
+    ap tree.to_hash
+    #puts tree.to_hash.to_yaml
 
+  end
 end
+
 
 
 

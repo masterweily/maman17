@@ -13,9 +13,18 @@ module Generators
     TXT_PATH = "#{DATA_PATH}/txt"
     YML_PATH = "#{DATA_PATH}/yml"
 
-    def self.samples_txt_to_yml file_name,decision_key
+    def self.samples_txt_to_yml file_name,decision_key,ignore_keys=[]
       samples = format_samples txt_table_to_hash(file_name),decision_key
+      delete_ignored_keys(samples,ignore_keys)
       save_as_yaml samples,file_name
+    end
+
+    def self.delete_ignored_keys(samples,ignored_keys)
+      ignored_keys.each do |key|
+        samples.each do |sample|
+          sample['attributes'].delete(key)
+        end
+      end
     end
 
 
@@ -30,7 +39,7 @@ module Generators
 
 
     def self.save_as_yaml hash,file_name
-      yaml = hash.to_yaml.gsub("'",'')
+      yaml = hash.to_yaml
       file = File.new(yml_path(file_name), 'w')
       file.write(yaml)
       file.close
@@ -61,9 +70,10 @@ module Generators
 end
 
 
-file_name = 'examples'
-decision_key = :Enjoy
+file_name = ARGV[0] || 'examples'
+decision_key = ARGV[1] || :Enjoy
+ignore_keys = ARGV[2..-1] || []
 
 
-Generators::Data.samples_txt_to_yml file_name,decision_key
+Generators::Data.samples_txt_to_yml file_name,decision_key,ignore_keys
 
