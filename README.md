@@ -1,3 +1,4 @@
+```yaml
 ---
 Occupied:
   Highly:
@@ -31,3 +32,4 @@ Occupied:
               Medium: 'Yes'
       Rotchild blvd.: 'No'
       Florentin: 'No'
+```
