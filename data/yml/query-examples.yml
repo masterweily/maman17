@@ -1,0 +1,10 @@
+---
+- decision: nil
+  attributes:
+    Favorite Beer: 'No'
+    VIP: 'No'
+    Location: City-Center
+    Music: Loud
+    Price: Cheap
+    Occupied: 'Yes'
+    Size: Large

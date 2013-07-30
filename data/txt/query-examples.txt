@@ -1,0 +1,2 @@
+Enjoy   Favorite Beer	VIP	Location	Music	Price	Occupied	Size
+?   No  No  City-Center Loud    Cheap   Yes Large
