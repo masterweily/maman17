@@ -13,7 +13,9 @@ module App
     puts 'Loading Examples...'
     examples = Data.examples
     puts 'Learning...'
+    time = Time.now
     tree = Learner.tree_learn(examples)
+    puts "Learning completed in: #{((Time.now - time)*1000.0).round(2)}ms"
     puts 'Generated Tree:'
     ap tree.to_hash
 
@@ -31,9 +33,12 @@ module App
       query.attributes['Location'] = location
       puts 'Quering the tree, query:'
       ap query.attributes.to_hash
+      time = Time.now
       result = tree.classify query
+      puts "Query completed in: #{((Time.now - time)*1000.0).round(2)}ms"
       results[result] ||= 0
       results[result] += 1
+
       puts "Result: #{result}"
       puts '---------------------------------------------------'
     end
